@@ -1,9 +1,16 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 type Props = {
   onClick: () => void;
-  name: string;
+  children: ReactNode;
 };
-export const Button: FC<Props> = ({ name, onClick }) => {
-  return <button onClick={onClick}>{name}</button>;
+export const Button: FC<Props> = ({ children, onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className='w-32 bg-gray-500 hover:bg-gray-700 py-2 px-4 rounded'
+    >
+      {children}
+    </button>
+  );
 };
