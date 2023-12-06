@@ -5,7 +5,7 @@ type Props = {
 };
 export const Role: FC<Props> = ({ children }) => {
   return (
-    <div className='border-2 border-solid border-black w-20  h-20 text-center flex justify-center items-center mx-auto'>
+    <div className='border-2 border-solid border-black w-20  h-10  flex justify-center items-center'>
       <p className='text-3xl'>{children}</p>
     </div>
   );
