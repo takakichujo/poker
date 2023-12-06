@@ -12,6 +12,7 @@ export default {
         40: '300px',
         50: '100px',
         60: '140px',
+        70: '960px',
       },
       height: {
         50: '100px',

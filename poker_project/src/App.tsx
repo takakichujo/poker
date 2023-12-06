@@ -1,18 +1,32 @@
 import './index.css';
-import { MoleculeRole } from './components/molecule/MoleculeRole';
-import { MoleculeTrumps } from './components/molecule/MoleculeTrumps';
+import { TemplatesField } from './components/templates/TemplatesField';
+
 function App() {
+  const onClick = () => {
+    console.log('a');
+  };
   return (
-    <>
-      <MoleculeRole result='あああ' playerName='aaa' role='aaa' />
-      <MoleculeTrumps
-        image1='./src/img/card_spade_1.png'
-        image2='./src/img/card_spade_1.png'
-        image3='./src/img/card_spade_1.png'
-        image4='./src/img/card_spade_1.png'
-        image5='./src/img/card_spade_1.png'
-      />
-    </>
+    <TemplatesField
+      myResult='あああ'
+      myPlayerName='aaa'
+      myRole='aaa'
+      enemyResult='あああ'
+      enemyPlayerName='aaa'
+      enemyRole='aaa'
+      myImage1='./src/img/card_spade_1.png'
+      myImage2='./src/img/card_spade_1.png'
+      myImage3='./src/img/card_spade_1.png'
+      myImage4='./src/img/card_spade_1.png'
+      myImage5='./src/img/card_spade_1.png'
+      enemyImage1='./src/img/card_spade_1.png'
+      enemyImage2='./src/img/card_spade_1.png'
+      enemyImage3='./src/img/card_spade_1.png'
+      enemyImage4='./src/img/card_spade_1.png'
+      enemyImage5='./src/img/card_spade_1.png'
+      onClick={onClick}
+    >
+      {'あああ'}
+    </TemplatesField>
   );
 }
 

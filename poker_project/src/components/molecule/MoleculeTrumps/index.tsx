@@ -19,12 +19,12 @@ export const MoleculeTrumps: FC<Props> = ({
   className,
 }) => {
   return (
-    <div className={`flex mt-7 ${className}`}>
-      <Trump image={image1} className='mr-14' />
-      <Trump image={image2} className='mr-14' />
-      <Trump image={image3} className='mr-14' />
-      <Trump image={image4} className='mr-14' />
-      <Trump image={image5} className='mr-14' />
+    <div className={`flex mt-7 mb-7 ${className}`}>
+      <Trump image={image1} className='mr-20' />
+      <Trump image={image2} className='mr-20' />
+      <Trump image={image3} className='mr-20' />
+      <Trump image={image4} className='mr-20' />
+      <Trump image={image5} className='mr-20' />
     </div>
   );
 };

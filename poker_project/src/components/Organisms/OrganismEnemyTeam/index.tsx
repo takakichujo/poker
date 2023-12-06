@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { MoleculeEnemyRole } from '../../molecule/MoleculeEnemyRole';
+import { MoleculeMyRole } from '../../molecule/MoleculeMyRole';
 import { MoleculeTrumps } from '../../molecule/MoleculeTrumps';
 
 type Props = {
@@ -14,7 +14,7 @@ type Props = {
   className?: string;
 };
 
-export const OrganismsMyTeam: FC<Props> = ({
+export const OrganismsEnemyTeam: FC<Props> = ({
   image1,
   image2,
   image3,
@@ -27,18 +27,18 @@ export const OrganismsMyTeam: FC<Props> = ({
 }) => {
   return (
     <>
-      <MoleculeEnemyRole
-        result={result}
-        playerName={playerName}
-        role={role}
-        resultClassName={className}
-      />
       <MoleculeTrumps
         image1={image1}
         image2={image2}
         image3={image3}
         image4={image4}
         image5={image5}
+      />
+      <MoleculeMyRole
+        result={result}
+        playerName={playerName}
+        role={role}
+        resultClassName={className}
       />
     </>
   );

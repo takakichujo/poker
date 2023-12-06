@@ -9,7 +9,7 @@ type Props = {
   resultClassName?: string;
   roleClassName?: string;
 };
-export const MoleculeRole: FC<Props> = ({
+export const MoleculeEnemyRole: FC<Props> = ({
   result,
   playerName,
   role,
